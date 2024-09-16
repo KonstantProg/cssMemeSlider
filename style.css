@@ -13,5 +13,82 @@ input {
 }
 
 img {
-  width: 50vw;
+  width: 40vw;
+
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.control__btn {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: lightgreen;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.slider__wrapper {
+  display: flex;
+  width: 40vw;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slide__title {
+  display: flex;
+  width: 40vw;
+  gap: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  transition: 0.5s ease;
+}
+
+.title__text {
+  color: #fff;
+  width: 100%;
+}
+
+#s1:nth-child(1):checked ~ .slider__wrapper .slide {
+  transform: translate(0);
+}
+#s1:nth-child(1):checked ~ .label__group .control__area:nth-of-type(1) .control__btn {
+  background: purple; 
+  scale: 0.5;
+}
+
+#s2:nth-child(2):checked ~ .slider__wrapper .slide {
+  transform: translate(-100%);
+}
+#s2:nth-child(2):checked ~ .label__group .control__area:nth-of-type(2) .control__btn {
+  background: purple; 
+  scale: 0.5;
+}
+
+#s3:nth-child(3):checked ~ .slider__wrapper .slide {
+  transform: translate(-200%);
+}
+#s3:nth-child(3):checked ~ .label__group .control__area:nth-of-type(3) .control__btn {
+  background: purple; 
+  scale: 0.5;
+}
+
+#s4:nth-child(4):checked ~ .slider__wrapper .slide {
+  transform: translate(-300%);
+}
+#s4:nth-child(4):checked ~ .label__group .control__area:nth-of-type(4) .control__btn {
+  background: purple; 
+  scale: 0.5;
+}
+
+
