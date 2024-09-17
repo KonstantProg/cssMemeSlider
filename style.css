@@ -38,10 +38,18 @@ img {
 }
 
 .control__area {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6em;
+  height: 1.6em;
+  cursor: pointer;
 }
+
+.control__area:hover > .control__btn {
+  background: moccasin;
+}
+
 .control__btn {
   display: inline-block;
   width: 1em;
@@ -50,9 +58,6 @@ img {
   border-radius: 50%;
   transition: 0.5s ease;
   cursor: pointer;
-  &:hover {
-    background: moccasin;
-  }
 }
 
 .slider__wrapper {
