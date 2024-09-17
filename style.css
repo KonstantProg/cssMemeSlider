@@ -13,8 +13,7 @@ input {
 }
 
 img {
-  width: 80vw;
-
+  width: 40vw;
 }
 
 .container {
@@ -23,7 +22,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  max-width: 80vw;
+  max-width: 40vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -58,7 +57,7 @@ img {
 
 .slider__wrapper {
   display: flex;
-  width: 80vw;
+  width: 40vw;
   border-radius: 0.5em;
   overflow: hidden;
 }
