@@ -13,7 +13,7 @@ input {
 }
 
 img {
-  width: 40vw;
+  width: 60vw;
 }
 
 .container {
@@ -22,7 +22,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  max-width: 40vw;
+  max-width: 60vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,7 +62,7 @@ img {
 
 .slider__wrapper {
   display: flex;
-  width: 40vw;
+  width: 60vw;
   border-radius: 0.5em;
   overflow: hidden;
 }
@@ -133,5 +133,12 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+  }
+  
+  .label__group {
+    order: 1;
+  }
+  .slide__title {
+    order: 2;
   }
 }
